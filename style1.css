@@ -1,0 +1,132 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+}
+header a:first-of-type {
+    color: #FFCB05;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    background-color: #00274C;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    grid-row: 1; 
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 1rem 0 0;
+    flex-wrap: wrap; 
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #FFCB05;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: white;
+}
+h2{
+    text-align: center;
+    margin-top: 20px;
+    color: #00274C;
+    font-size: 1.1rem;
+    font-weight: bold;
+    
+}
+
+main {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible layout */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+main > div {
+    grid-column: span 1;
+    text-align: justify;
+}
+
+.more {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #00274C;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.more:hover {
+    background-color: #FFCB05;
+    color: black;
+}
+
+.slides {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 20px;
+}
+
+.slides section {
+    grid-column: span 1; 
+    text-align: center;
+}
+
+article {
+    display: grid;
+    grid-template-rows: auto auto 1fr; 
+    gap: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    grid-row: 3; 
+    background-color: #00274C;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+footer a:first-of-type {
+    color: #FFCB05;
+    padding: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
