@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found - CEW+</title>
+  <link rel="stylesheet" href="html5reset.css">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header>
+    <h1>Page Not Found</h1>
+  </header>
+  <main>
+    <div class="error">
+      <h1>404</h1>
+      <p>Sorry, the page you are looking for does not exist.</p>
+      <a href="index.html">Return to Home</a>
+    </div>
+  </main>
+  <footer>
+    <p>School of Information
+        University of Michigan<br>
+        105 S State St.
+        Ann Arbor, MI 48109-1285</p>
+  </footer>
+
+  <!-- Back-to-Top Button
+  <button id="backToTop">Back to Top</button> -->
+
+  <script>
+    const footerPara = document.querySelector('footer p');
+    if (footerPara) {
+        const currentYear = new Date().getFullYear();
+        footerPara.innerHTML += ` © ${currentYear}`;
+    }
+  </script>
+</body>
+</html>
